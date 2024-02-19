@@ -456,24 +456,68 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
-
+/* POPOXVAC
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
-#intro {
+/* #intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/intro-bg.jpg) top center;
+  animation: intro-2023 
+  @keyframes sevan {5}
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+} */
+ 
+/* #intro {
   width: 100%;
   height: 100vh;
   background: url(../img/intro-bg.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
-   animation: intro-2023 5s; /*Added duration of animation (5 seconds)  */
- }
+  animation: intro-2023 5s; /* Added duration of animation (5 seconds) */
+ /* } */
 
-@keyframes intro-2023 {
+ /* @keyframes intro-2023 { */
   /* Define your keyframes here */
+/* }  */ 
+
+#intro {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  animation-name: slide_animation; /* Changed to standard keyframes */
+  animation-duration: 12s; /* Adjusted duration for better timing */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  background-position: center;
+  background-size: cover;
 }
+
+
+@keyframes slide_animation {
+  0% { background-image: url(../img/vardenis.jpg);}
+  10% { background-image: url(../img/vardenis.jpg); }
+  20% { background-image: url(../img/vardenis.jpg); }
+  30% { background-image: url(../img/vardenis.jpg); }
+  40% {background-image: url(../img/vardenis.jpg); }
+  50% { background-image: url(../img/vardenis.jpg); }
+  60% { background-image: url(../img/intro-bg.jpg); }
+  70% { background-image: url(../img/intro-bg.jpg); }
+  80% { background-image: url(../img/intro-bg.jpg); }
+  90% { background-image: url(../img/intro-bg.jpg); }
+  100% { background-image: url(../img/intro-bg.jpg); }
+}
+
+
+
+
 
 #intro:before {
   content: "";
@@ -708,6 +752,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  height: 80%;
 }
 
 #speakers .speaker .details {
@@ -881,6 +926,7 @@ z-index: 999999;
 }
 
 .speaker img:hover {
+  
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -916,9 +962,8 @@ z-index: 999999;
 }
 
 #venue .container-fluid {
+
   margin-bottom: 3px;
-  
-  
 }
 
 #venue .venue-map iframe {
@@ -979,10 +1024,6 @@ z-index: 999999;
 # Hotels Section
 --------------------------------------------------------------*/
 
-.img-fluid {
-  width: 400px; /* Adjust the width as desired */
-  height: 280px; /* Maintain aspect ratio */
-}
 #hotels {
   padding: 60px 0;
 }
@@ -1584,6 +1625,12 @@ z-index: 999999;
   transform: scale(1.2);
 }
 
+img {
+  width: 400px; /* Adjust the width as desired */
+  height: 350; /* Maintain aspect ratio */
+}
+
+
 
 
 
@@ -1729,11 +1776,11 @@ z-index: 999999;
     margin-top: 10px;
   }
 }
-/* 
-/-----------------------------------------
+/* ANJATAC
+/* /----------------------------------------- */
 
 
-position: relative;
+/* position: relative;
   width: 100%;
   background: #111;
   overflow: hidden;
@@ -1790,6 +1837,6 @@ position: relative;
   }
 
 
-
+}
 
 
